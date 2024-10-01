@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 // Use the cors package to handle CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests from this origin
+    // origin: "http://localhost:3000", // Allow requests from this origin
+    origin: 'https://www.bizzowl.com',
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     optionsSuccessStatus: 200, // Set success status for preflight OPTIONS requests
